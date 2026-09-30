@@ -3,6 +3,9 @@ pandas>=3.0.6
 numpy>=2.5.3
 pyarrow>=25.0.1               # Parquet file I/O (Curitiba dataset)
 
+# ── Scientific computing / optimisation ─────────────────────────────
+scipy>=1.15.0                  # lsq_linear for dwell time extraction (DwellTimeExtractor)
+
 # ── HTTP & Real-time feed ───────────────────────────────────────────
 requests>=2.34.2              # Delhi OTD API calls
 gtfs-realtime-bindings>=3.0.0 # GTFS-RT protobuf parsing
