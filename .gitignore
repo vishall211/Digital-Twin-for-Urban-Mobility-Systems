@@ -1,0 +1,80 @@
+# ════════════════════════════════════════════════════════════════════
+#  Digital Twin for Urban Mobility Systems — .gitignore
+# ════════════════════════════════════════════════════════════════════
+
+
+# ── Python ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+wheels/
+*.whl
+MANIFEST
+
+# ── Virtual environments ─────────────────────────────────────────────
+.venv/
+venv/
+env/
+ENV/
+
+# ── Jupyter / IPython ────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb
+
+# ── Environment / secrets ────────────────────────────────────────────
+.env
+.env.*
+*.secret
+secrets.yaml
+secrets.json
+
+# ── macOS ────────────────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ── VS Code / IDEs ────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user
+
+# ── Logs & temp files ─────────────────────────────────────────────────
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ════════════════════════════════════════════════════════════════════
+#  Project-specific — Large / generated datasets
+# ════════════════════════════════════════════════════════════════════
+
+# Curitiba dataset — downloaded from Hugging Face (~5 GB, stored on Google Drive)
+# README.md inside this folder IS committed; only the data sub-folders are ignored.
+Datasets/Curitibaresearch_Bus-linear-interpolation/bus_itineraries/
+Datasets/Curitibaresearch_Bus-linear-interpolation/bus_tracking/
+
+# Delhi real-time snapshots — re-generated on each run
+# README.md inside this folder IS committed; only the CSV snapshots are ignored.
+Datasets/Delhi Bus Transit Data/*.csv
+
+# Any other raw/processed dataset folders
+Datasets/raw/
+Datasets/processed/
+Datasets/cache/
+
+# ── Output / results ──────────────────────────────────────────────────
+outputs/
+results/
+figures/

@@ -1,0 +1,12 @@
+# ── Core data handling ──────────────────────────────────────────────
+pandas>=3.0.6
+numpy>=2.5.3
+pyarrow>=25.0.1               # Parquet file I/O (Curitiba dataset)
+
+# ── HTTP & Real-time feed ───────────────────────────────────────────
+requests>=2.34.2              # Delhi OTD API calls
+gtfs-realtime-bindings>=3.0.0 # GTFS-RT protobuf parsing
+protobuf>=7.36.2              # Protocol Buffers (dependency of gtfs-realtime-bindings)
+
+# ── Dataset download ────────────────────────────────────────────────
+huggingface_hub>=2.0.0        # Curitiba bus dataset download
